@@ -1,0 +1,101 @@
+.contactt{
+    width: 100%;
+	min-height: 60vh;
+	background: linear-gradient(rgba(8, 0, 58, 0.7), rgba(255, 255, 255, 0.3)),
+		url("./assets/gallary2.jpg");
+	background-size: cover;
+	background-position: center;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	font-family: "Montserrat";
+	padding-left: 10%;
+}
+
+.contact{
+    margin: 80px auto;
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.contact-col{
+    flex-basis: 48%;
+    color: #473f3f;
+    
+}
+.contact-col h3{
+    color: #1942b2;
+    font-weight: 500;
+    font-size: 25px;
+    display: flex;
+    margin-bottom: 20px;
+}
+.contact-img{
+    width: 35px;
+    margin-left: 10px;
+
+}
+
+.contact-col p{
+    max-width: 500px;
+    list-style: 0.3;
+    line-height: 2;
+}
+.contact-col ul li{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.icon{
+    margin-right: 10px;
+     color: #1942b2;
+    
+}
+/* input, textarea{
+    display: block;
+    width: 100%;
+    background: #ebecfe;
+    padding: 15px;
+    border:0;
+    outline: 0;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    resize: none;
+    margin: 5px 0 15px 0;
+} */
+ form input, textarea{
+   display: block;
+    width: 100%;
+    background: #ebecfe;
+    padding: 15px;
+    border:0;
+    outline: 0;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+
+}
+
+input:focus, textarea:focus{
+    outline: none;
+    padding: 10px;
+    /* transition:ease-in 1s; */
+    border-radius: 10px;
+}
+
+/* media */
+
+@media (max-width: 800px){
+    .contact {
+        display: block;
+    };
+    .contact-col{
+        margin-bottom: 20px;
+
+    }
+}
+

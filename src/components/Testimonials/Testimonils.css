@@ -1,0 +1,41 @@
+.test{
+    text-align: center;
+    border: 1px solid #8b8b8b;
+    padding: 2rem;
+    width: 100%;
+    border-radius: 20px;
+}
+.testimonial{
+    display: flex;
+    max-width: 90%;
+    margin: 0 auto;
+    gap: 2%;
+    margin-top: 2rem;
+}
+.test p{
+    margin: 5px;
+
+}
+
+/*  */
+@media(max-width: 390px){
+    .testimonial{
+        display: block;
+        width: 80%;
+        margin: 10 auto;
+    }
+    .test{
+        margin-top: 2rem;
+        background: #abb5ac;
+    }
+}
+@media(max-width: 660px){
+    .testimonial{
+        display: block;
+        width: 80%;
+        margin: 10 auto;
+    }
+    .test{
+        margin-top: 2rem;
+    }
+}

@@ -1,0 +1,81 @@
+.about-page {
+	margin: 0 auto;
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5%;
+	margin-top: 10rem;
+	/* text-align: center; */
+}
+.about-page img {
+	width: 700px;
+	flex-basis: 50%;
+	border-radius: 10px;
+}
+.about-content {
+	flex-basis: 40%;
+}
+.about-content h1 {
+	font-weight: 600;
+	font-size: 30px;
+	max-width: 700px;
+}
+.about-content p {
+	color: rgb(104, 93, 78);
+	line-height: 2;
+	max-width: 700px;
+}
+.mission-page img {
+	width: 100%;
+	background-size: cover;
+}
+.mission-page {
+	text-align: center;
+	width: 20%;
+	border: 1px solid rgb(91, 72, 72);
+	border-radius: 10px;
+	padding-bottom: 20px;
+	box-shadow: rgb(225, 105, 19);
+}
+.miss {
+	display: flex;
+	justify-content: center;
+	gap: 4%;
+	margin-top: 4rem;
+}
+.mission-header{
+    font-size: 25px;
+    font-weight: 900;
+    color: blue;
+}
+
+/*  */
+@media (max-width: 390px) {
+	.about-page {
+		display: block;
+	}
+    .miss {
+		display: block;
+		width: 80%;
+		margin: 0 auto;
+	}
+	.mission-page {
+		width: 100%;
+		margin-top: 2rem;
+	}
+}
+@media (max-width: 660px) {
+	.about-page {
+		display: block;
+	}
+	.miss {
+		display: block;
+		width: 80%;
+		margin: 0 auto;
+	}
+	.mission-page {
+		width: 100%;
+		margin-top: 2rem;
+	}
+}

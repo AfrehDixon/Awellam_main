@@ -1,0 +1,87 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.contain {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.header {
+	margin-top: 5rem;
+	text-align: center;
+}
+
+.main-header {
+	font-size: 45px;
+	font-weight: 600;
+}
+
+.sub-header {
+	font-size: 20px;
+}
+.main-choose {
+	background: #00c3;
+	height: 60vh;
+}
+
+body {
+	background: #e9eded;
+	font-family: Mon
+}
+
+.hero {
+	width: 100%;
+	min-height: 80vh;
+	background: linear-gradient(rgba(8, 0, 58, 0.7), rgba(255, 255, 255, 0.3)),
+		url("../../assets/hullage2.jpg");
+	background-size: cover;
+	background-position: center;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	font-family: "Montserrat";
+	padding-left: 10%;
+}
+
+.hero-text {
+	width: 800px;
+}
+.hero-text h1 {
+	font-size: 60px;
+	line-height: 1.4;
+	font-weight: 600;
+}
+.hero-text h5 {
+	line-height: 1.4;
+	margin-bottom: 10px;
+}
+.hero-btn {
+	display: flex;
+	gap: 20px;
+	margin-top: 20px;
+}
+
+.back {
+	background: #ff6f06;
+}
+
+.abouttt {
+	width: 100%;
+	min-height: 60vh;
+	background: linear-gradient(rgba(8, 0, 58, 0.7), rgba(255, 255, 255, 0.3)),
+		url("./assets/gallary2.jpg");
+	background-size: cover;
+	background-position: center;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	font-family: "Montserrat";
+	padding-left: 10%;
+}

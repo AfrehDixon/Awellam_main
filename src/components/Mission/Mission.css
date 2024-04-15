@@ -1,0 +1,84 @@
+.mission {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5%;
+	margin-top: 2em;
+}
+
+.mission img {
+	width: 200px;
+	flex-basis: 50%;
+	border-radius: 10px;
+	height: auto;
+}
+.mission-content {
+	flex-basis: 45%;
+	line-height: 2.3;
+}
+.checked {
+	color: green;
+}
+ul li {
+	display: flex;
+}
+/* .vision{
+    color:;
+ } */
+.mission-sub {
+	display: flex;
+	gap: 5px;
+	align-items: center;
+}
+
+.btn{
+	padding: 10px 20px;
+	border-radius: 10px;
+}
+/* .btn:hover{
+	background: lightblue;
+	color: red;
+} */
+
+/*  */
+@media (max-width: 360px) {
+	.mission {
+		display: block;
+	}
+	.mission img {
+		width: 100%;
+	}
+	.mission-content {
+		margin-top: 2rem;
+	}
+	.btn{
+		align-self: center;
+	}
+}
+@media (max-width: 768px) {
+	.mission {
+		display: flex;
+	}
+	.mission img {
+		width: 100%;
+	}
+	.mission-content {
+		margin-top: 2rem;
+	}
+	.btn{
+		align-self: center;
+	}
+	
+}
+
+@media (max-width: 970px) {
+	.mission {
+		display: block;
+	}
+	.mission img {
+		width: 100%;
+	}
+	.mission-content {
+		margin-top: 2rem;
+	}
+}

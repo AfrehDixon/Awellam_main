@@ -1,0 +1,105 @@
+.main-service {
+	display: flex;
+	width: 100%;
+	gap: 5%;
+}
+
+.service {
+	flex-basis: 35%;
+	gap: 10;
+	border: 1px solid rgb(209, 207, 207);
+	border-bottom: 10px solid #ff6f06;
+	text-align: center;
+	position: relative;
+	border-top-right-radius: 3rem;
+	box-shadow: #ff6f06;
+}
+.service img {
+	border-top-right-radius: 3rem;
+	width: 100%;
+}
+
+/* .service img {
+	width: 600px;
+} */
+.service p {
+	max-width: 400px;
+}
+
+.service button {
+	max-width: 400px;
+	position: absolute;
+	top: 430px;
+	left: 130px;
+	background: #ff6f06;
+	color: white;
+}
+
+/*  */
+@media (max-width: 960px) {
+	.main-service {
+		display: block;
+		/* width: 100%; */
+	}
+	.service {
+		flex: 100%;
+		margin-top: 3rem;
+	}
+	.service img {
+		width: 100%;
+	}
+}
+
+@media (max-width: 360px) {
+	.service {
+		border-bottom: 10px solid #ff6f06;
+		text-align: center;
+		position: relative;
+		border-top-right-radius: 3rem;
+	}
+	.service button {
+		position: absolute;
+		background: #ff6f06;
+		color: white;
+		top: 260px;
+		left: 0px;
+		right: 0px;
+		margin-left: 35px;
+	}
+	.service p {
+		margin-top: 40px;
+	}
+}
+@media (max-width: 660px) {
+	/* .service {
+		border-bottom: 10px solid #ff6f06;
+		text-align: center;
+		position: relative;
+		border-top-right-radius: 3rem;
+	} */
+	.service button {
+		position: absolute;
+		background: #ff6f06;
+		color: white;
+		top: 280px;
+		left: 0px;
+		right: 0px;
+		margin-left: 35px;
+		margin-right: 35px;
+	}
+	.service p {
+		margin-top: 40px;
+	}
+	.service {
+		border-bottom: 10px solid #ff6f06;
+		text-align: center;
+		position: relative;
+		border-radius: 20px;
+	}
+	.service img{
+		/* border-radius: 20px; */
+	width: 100%;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	}
+}

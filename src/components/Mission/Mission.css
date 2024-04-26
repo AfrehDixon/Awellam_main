@@ -55,7 +55,7 @@ ul li {
 		align-self: center;
 	}
 }
-@media (max-width: 768px) {
+@media (max-width: 660px) {
 	.mission {
 		display: flex;
 	}

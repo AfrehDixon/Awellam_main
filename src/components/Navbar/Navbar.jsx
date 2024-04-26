@@ -1,15 +1,31 @@
-import { Link,useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo2 from "../../assets/logo2.png";
 import "./Navbar.css";
-import { HiMenu } from "react-icons/hi";
-export default function Navbar () {
-  // const location= useLocation()
+import { HiEyeOff, HiMenu } from "react-icons/hi";
+import { useState, useEffect } from "react";
+import { MdClose } from "react-icons/md";
+
+export default function Navbar() {
+	const [sticky, setsticky] = useState(false);
+	// const location= useLocation()
+
+	useEffect(() => {
+		window.addEventListener("scroll", () => {
+			window.scrollY > 50 ? setsticky(true) : setsticky(false);
+		});
+	});
+
+	const [mobilemenu, setmobile] = useState(false);
+
+	const hide = () => {
+		mobilemenu ? setmobile(false) : setmobile(true);
+	};
 
 	return (
 		<div className="">
-			<header className="navbar contain">
+			<header className={`navbar contain ${sticky ? "dark-nav" : ""}`}>
 				<img src={logo2} alt="logo" />
-				<ul className="nav">
+				<ul className={mobilemenu ? "" : "hide"}>
 					<li>
 						<Link to="/"> Home </Link>
 					</li>
@@ -23,7 +39,22 @@ export default function Navbar () {
 						<Link to="/contact"> Contact </Link>
 					</li>
 				</ul>
-				<HiMenu size={80} />
+				<div className="menu">
+					{mobilemenu ? (
+						<MdClose
+							size={40}
+							onClick={hide}
+							className="hover: cursor-pointer"
+						/>
+					) : (
+						<HiMenu
+							size={40}
+							onClick={hide}
+							className="hover: cursor-pointer"
+						/>
+					)}
+					{/* ()=> ToggleIsNav(!ToggleNav) */}
+				</div>
 			</header>
 		</div>
 	);

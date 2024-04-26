@@ -1,6 +1,7 @@
 // import React from "react";
 // import { TiInputChecked } from "react-icons/ti";
 // import { HiOutlineLightBulb } from "react-icons/hi";
+import { Link } from "react-router-dom";
 import banner1 from "../../assets/banner1.jpg";
 import "./Mission.css";
 import { motion } from "framer-motion";
@@ -62,7 +63,10 @@ export default function Mission() {
 						Vision
 					</span>
 					<p>Fulfilling an enduring Legacy built on Trust & Dependability</p> */}
+					<Link to='/about'>
+					
 					<button className="btn">Know more</button>
+					</Link>
 					<motion.button
 						initial={{ opacity: 0.6 }}
 						whileHover={{

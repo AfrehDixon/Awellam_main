@@ -1,5 +1,5 @@
 import { TiSocialFacebook, TiSocialInstagram, TiSocialLinkedin, TiSocialTwitter } from "react-icons/ti";
-import logo from "../assets/logo.png";
+import logo2 from "../assets/logo2.png";
 import "./Footer.css";
 
 export default function Footer() {
@@ -7,12 +7,12 @@ export default function Footer() {
 		<div className="">
 			<div className="footer">
 				<div className="footer1">
-					<img src={logo} alt="" />
+					<img src={logo2} alt="" />
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-						est amet ab eum possimus harum nisi sit, necessitatibus impedit
-						aliquid neque iste exercitationem tempora, animi laborum vitae modi
-						sint cumque?
+						Awellam Company Limited is a company providing topnotch services in
+						building constructions and civil engineering with more than a decade
+						of experience in real estates, building custom homes, townhouses,
+						condominiums, and apartments etc.
 					</p>
 				</div>
 				<div className="footer2 ">
@@ -32,10 +32,10 @@ export default function Footer() {
 				</div>
 				<div className="footer4">
 					<h2 className="uppercase">Socials</h2>
-					<TiSocialTwitter  className=""  size={25}/>
-					<TiSocialFacebook  className=""  size={25}/>
-					<TiSocialLinkedin  className=""  size={25}/>
-					<TiSocialInstagram  className=""  size={25}/>
+					<TiSocialTwitter className="" size={25} />
+					<TiSocialFacebook className="" size={25} />
+					<TiSocialLinkedin className="" size={25} />
+					<TiSocialInstagram className="" size={25} />
 				</div>
 			</div>
 		</div>

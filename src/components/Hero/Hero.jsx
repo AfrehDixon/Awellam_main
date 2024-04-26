@@ -1,9 +1,10 @@
 // import React from 'react'
 
+import { Link } from "react-router-dom";
 import Button from "../Button/Button";
 import "./Hero.css";
 
-export default function Hero ( { children } ) {
+export default function Hero({ children }) {
 	return (
 		// <div>
 		// 	<div>children</div>
@@ -22,10 +23,11 @@ export default function Hero ( { children } ) {
 					delivery,Lets build a solid future together
 				</h5>
 			</div>
+			<Link to='/about'>
 				<Button title="LEARN MORE"></Button>
+			</Link>
 			<div className="hero-btn">
 				{/* <Button title="CONTACT US"></Button> */}
-
 			</div>
 		</div>
 	);

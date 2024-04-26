@@ -17,6 +17,8 @@
 .service img {
 	border-top-right-radius: 3rem;
 	width: 100%;
+	height: 400px;
+
 }
 
 /* .service img {
@@ -29,7 +31,7 @@
 .service button {
 	max-width: 400px;
 	position: absolute;
-	top: 430px;
+	top: 375px;
 	left: 130px;
 	background: #ff6f06;
 	color: white;
@@ -61,13 +63,17 @@
 		position: absolute;
 		background: #ff6f06;
 		color: white;
-		top: 260px;
+		top: 380px;
 		left: 0px;
 		right: 0px;
 		margin-left: 35px;
 	}
 	.service p {
 		margin-top: 40px;
+	}
+	.service img{
+		width: 100%;
+		height:max-content;
 	}
 }
 @media (max-width: 660px) {
@@ -77,16 +83,28 @@
 		position: relative;
 		border-top-right-radius: 3rem;
 	} */
-	.service button {
+
+	/* .service .button:nth-child(0){
 		position: absolute;
 		background: #ff6f06;
 		color: white;
-		top: 280px;
+		top: 180px;
+		left: 0px;
+		right: 0px;
+		margin-left: 35px;
+		margin-right: 35px;
+	} */
+	.service button:nth-child(1) {
+		position: absolute;
+		background: #ff6f06;
+		color: white;
+		top: 180px;
 		left: 0px;
 		right: 0px;
 		margin-left: 35px;
 		margin-right: 35px;
 	}
+	
 	.service p {
 		margin-top: 40px;
 	}
@@ -101,5 +119,7 @@
 	width: 100%;
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
+	object-fit: contain;
+	height:min-content;
 	}
 }

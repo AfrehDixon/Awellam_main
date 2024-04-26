@@ -55,3 +55,22 @@ font-size: 15px;
 		text-align: center;
 	}
 }
+@media (max-width: 690px){
+	.serve-main {
+		display: block;
+		
+	}
+	.serve-card {
+		margin-top: 2rem;
+		/* text-align: start; */
+	}
+	.serve-card p{
+		text-align: start;
+	}
+	.serve-card {
+		border-radius: 10px;
+	}
+	.new{
+		text-align: center;
+	}
+}
